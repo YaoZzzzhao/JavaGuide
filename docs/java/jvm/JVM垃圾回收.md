@@ -76,10 +76,7 @@ Java 堆是垃圾收集器管理的主要区域，因此也被称作**GC 堆（G
 
 Call Stack: a stack data used for storing info about the active **methods** of Application code;  
 
-Stack: contains temporary **Variables** created by functions of Application code. It is used to execute a thread and may have short-lived values  
-and/or **references** to other objects(which store in Heap space); (Plus: here the **reference** is not the exact address of object because 1) of  
-safety: 2) Objects are moving in the Heap space hence the address is dynamic. Use exact address may cause errors at Runtime. So Java uses  
-**indirect** address.)  
+Stack: contains temporary **Variables** created by functions of Application code. It is used to execute a thread and may have short-lived values and/or **references** to other objects(which store in Heap space); (Plus: here the **reference** is not the exact address of object because 1) of safety: 2) Objects are moving in the Heap space hence the address is dynamic. Use exact address may cause errors at Runtime. So Java uses **indirect** address.)  
 
 Heap: used for **dynamic memory allocation** for Application Java objects and JRE/System at Runtime.  
  
