@@ -75,7 +75,10 @@ Java 堆是垃圾收集器管理的主要区域，因此也被称作**GC 堆（G
 > 修正（[issue552](https://github.com/Snailclimb/JavaGuide/issues/552)）：“Hotspot遍历所有对象时，按照年龄从小到大对其所占用的大小进行累积，当累积的某个年龄大小超过了survivor区的一半时，取这个年龄和MaxTenuringThreshold中更小的一个值，作为新的晋升年龄阈值”。
 
 Call Stack: a stack data used for storing info about the active **methods** of Application code;
-Stack: contains temporary **Variables** created by functions of Application code. It is used to execute a thread and may have short-lived values and/or **references** to other objects(which store in Heap space); (Plus: here the **reference** is not the exact address of object because 1) of safety: 2) Objects are moving in the Heap space hence the address is dynamic. Use exact address may cause errors at Runtime. So Java uses **indirect** address.)
+Stack: contains temporary **Variables** created by functions of Application code. It is used to execute a thread and may have short-lived values
+and/or **references** to other objects(which store in Heap space); (Plus: here the **reference** is not the exact address of object because 1) of
+safety: 2) Objects are moving in the Heap space hence the address is dynamic. Use exact address may cause errors at Runtime. So Java uses
+**indirect** address.)
 Heap: used for **dynamic memory allocation** for Application Java objects and JRE/System at Runtime.
 
 >
